@@ -25,6 +25,7 @@ This folder contains five MATLAB functions, seven MATLAB programs and four MATLA
 ## DESCRIPTION OF MATLAB FUNCTIONS:
 
 1. crossvalidation.m
+
 	optimum_h_or_neighborhood_size = crossvalidation(t_vector_X, X_static, t_vector_Y, Y_static, method_for_h, type, Kernel)
 	
 		Arguments: t_vector_X, X_static, t_vector_Y, Y_static, method_for_h, type, Kernel
@@ -41,6 +42,7 @@ This folder contains five MATLAB functions, seven MATLAB programs and four MATLA
 	This function calculates the optimum bandwidth or neighborhood size using cross validation. If method_for_h = 1, it returns the optimum bandwidth, else it returns the optimum neighborhood size. X_static is the n-by-p data matrix of n covariate observations, Y_static is the n-by-q data matrix of the corresponding response observations. Three types of estimators can be used for cross validations, viz., the weighted pointwise mean, the weighted pointwise median and the weighted spatial median. To use the weighted pointwise mean, put type = 'pointwise_mean', to use the weighted pointwise median, put type = 'pointwise_median', and to use the weighted spatial median, put type = 'spatial_median'. The numbers n, p and q must be greater than 1. Kernel is a function handle representing the kernel function used to calculate the weights. t_vector_X and t_vector_Y are the respective grids on which the observations in X_static and Y_static are recorded.
 
 2. kernelweights.m
+
 	Weights = kernelweights(x, X_static, t_vector, h, Kernel)
 	
 		Arguments: x, X_static, t_vector, h, Kernel
@@ -56,6 +58,7 @@ This folder contains five MATLAB functions, seven MATLAB programs and four MATLA
 	This function computes the kernel weights for the observation present in the data matrix X_data according to the kernel function Kernel and bandwidth h. X_static is a n-by-p data matrix consisting of n functional observations recorded at p points specified in the vector t_vector. The variable x is a row vector of length p, whose elements are the recorded values of the underlying function at the points in t_vector. The argument named Kernel is a function handle specifying the kernel function, and h is a positive number which is the bandwidth of the kernel function.
 
 3. spatialquantile.m
+
 	Quantile = spatialquantile(Data_original, Weights, u_index, c, t_vector)
 	
 		Arguments: Data_original, Weights, u_index, c, t_vector
@@ -71,6 +74,7 @@ This folder contains five MATLAB functions, seven MATLAB programs and four MATLA
 	This function computes the weighted spatial quantile from the data matrix X_data_original with corresponding weights in the variable Weights. The data matrix X_data_original is of dimension n-by-p and contains n functional observations which are recorded on a grid of length p, recorded in the row vector t_vector. The variable Weights is a column vector of length n, whose entries are the weights of the corresponding observations in X_data_original. The variables u_index and c are a positive integer and a real number in (-1, 1) respectively, which together determine the variable u for the spatial quantile computation. For example, if u_index = 1 and c = 0.5, then we compute the weighted spatial quantile corresponding to u equalling to 0.5 times the weighted first principal component of the data in X_static_original.
 
 4. spatialquantileconfidenceset.m
+
 	ConfidenceSet = spatialquantileconfidenceset(Data_original, Weights, u_index, c, t_vector, alpha)
 
 		Arguments: Data_original, Weights, u_index, c, t_vector, alpha
@@ -87,6 +91,7 @@ This folder contains five MATLAB functions, seven MATLAB programs and four MATLA
 	Computes the asymptotic confidence sets of a spatial quantile.
 			
 5. wsdrank.m
+
 	rankings = wsdrank(X_to_rank, X_data, X_data_weights, t_vector)
 	
 		Arguments: X_to_rank, X_data, X_data_weights, t_vector
@@ -106,22 +111,31 @@ This folder contains five MATLAB functions, seven MATLAB programs and four MATLA
 ## DESCRIPTION OF MATLAB PROGRAMS:
 
 1. confsetcigar.m
+
 	Produces the plots of the asymptotic confidence sets in the Cigar Data.
 
 2. confsetsimheter.m
+
 	Produces the plots of the asymptotic confidence sets in the heteroscedastic model.
+
 3. confsetsumhes.m
+
 	Produces the plots of the asymptotic confidence sets in the Penn Table Data.
 
 4. qr1.m
+
 	This program generates the plots of the conditional spatial quantiles and the conditional spread measures in the heteroscedastic model considered in the paper.
 
 5. qr2.m
+
 	This program generates the plots of the conditional spatial quantiles and the conditional spread measures in the Cigar Data considered in the paper.
+
 6. qr3.m
+
 	This program generates the plots of the conditional spatial quantiles and the conditional spread measures in the Penn Table considered in the paper.
 
 7. spatialdepthdemo.m
+
 	The program generetes a figure to pictorially demonstrate the concept of the spatial depth.
 
 
@@ -130,13 +144,17 @@ This folder contains five MATLAB functions, seven MATLAB programs and four MATLA
 ## DESCRIPTION OF MATLAB DATASETS:
 
 1. qr1dataheter.mat
+
 	This dataset contains a simulated sample from the heteroscedastic model described in the paper.
 
 2. qr1datahom.mat
+
 	This dataset contains a simulated sample from a homoscedastic model.
 
 3. Cigar.mat
+
 	This dataset contains the Cigar Data described in the paper.
 
 4. SumHes.mat
+
 	This dataset contains the Penn Table Data described in the paper.
