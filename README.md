@@ -1,4 +1,4 @@
-This folder contains five MATLAB functions, seven MATLAB programs and four MATLAB datasets. To use them, put all of these in your MATLAB directory, and then do as written in DESCRIPTION OF MATLAB PROGRAMS below.
+This folder contains five MATLAB functions, seven MATLAB programs and four MATLAB datasets, which are used in the analysis of simulated and real data in [Chowdhury and Chaudhuri (2019)](#ref1). To use them, put all of these in your MATLAB directory, and then do as written in DESCRIPTION OF MATLAB PROGRAMS below.
 
 ### The MATLAB functions:
 1. crossvalidation.m
@@ -158,3 +158,9 @@ This folder contains five MATLAB functions, seven MATLAB programs and four MATLA
 4. SumHes.mat
 
 	This dataset contains the Penn Table Data described in the paper.
+
+
+## References
+
+<a id="ref1"></a> 
+Chowdhury, J., & Chaudhuri, P. (2019). Nonparametric depth and quantile regression for functional data. Bernoulli, 25(1), 395-423. [[Journal link](https://projecteuclid.org/journals/bernoulli/volume-25/issue-1/Nonparametric-depth-and-quantile-regression-for-functional-data/10.3150/17-BEJ991.full)] [[arXiv link](https://arxiv.org/pdf/1607.03752)]
