@@ -37,8 +37,8 @@ DESCRIPTION OF MATLAB FUNCTIONS:
 			Kernel			: function handle for the underlying kernel
 		Output: optimum_h_or_neighborhood_size
 			
-		Description:
-			This function calculates the optimum bandwidth or neighborhood size using cross validation. If method_for_h = 1, it returns the optimum bandwidth, else it returns the optimum neighborhood size. X_static is the n-by-p data matrix of n covariate observations, Y_static is the n-by-q data matrix of the corresponding response observations. Three types of estimators can be used for cross validations, viz., the weighted pointwise mean, the weighted pointwise median and the weighted spatial median. To use the weighted pointwise mean, put type = 'pointwise_mean', to use the weighted pointwise median, put type = 'pointwise_median', and to use the weighted spatial median, put type = 'spatial_median'. The numbers n, p and q must be greater than 1. Kernel is a function handle representing the kernel function used to calculate the weights. t_vector_X and t_vector_Y are the respective grids on which the observations in X_static and Y_static are recorded.
+	Description:
+	This function calculates the optimum bandwidth or neighborhood size using cross validation. If method_for_h = 1, it returns the optimum bandwidth, else it returns the optimum neighborhood size. X_static is the n-by-p data matrix of n covariate observations, Y_static is the n-by-q data matrix of the corresponding response observations. Three types of estimators can be used for cross validations, viz., the weighted pointwise mean, the weighted pointwise median and the weighted spatial median. To use the weighted pointwise mean, put type = 'pointwise_mean', to use the weighted pointwise median, put type = 'pointwise_median', and to use the weighted spatial median, put type = 'spatial_median'. The numbers n, p and q must be greater than 1. Kernel is a function handle representing the kernel function used to calculate the weights. t_vector_X and t_vector_Y are the respective grids on which the observations in X_static and Y_static are recorded.
 
 2. kernelweights.m
 	Weights = kernelweights(x, X_static, t_vector, h, Kernel)
