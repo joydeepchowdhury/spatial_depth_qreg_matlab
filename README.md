@@ -22,7 +22,7 @@ This folder contains five MATLAB functions, seven MATLAB programs and four MATLA
 3. Cigar.mat
 4. SumHes.mat
 
-## DESCRIPTION OF MATLAB FUNCTIONS:
+## Description of MATLAB functions:
 
 1. crossvalidation.m
 
@@ -108,7 +108,7 @@ This folder contains five MATLAB functions, seven MATLAB programs and four MATLA
 
 			
 
-## DESCRIPTION OF MATLAB PROGRAMS:
+## Description of MATLAB programs:
 
 1. confsetcigar.m
 
@@ -141,7 +141,7 @@ This folder contains five MATLAB functions, seven MATLAB programs and four MATLA
 
 
 
-## DESCRIPTION OF MATLAB DATASETS:
+## Description of MATLAB datasets:
 
 1. qr1dataheter.mat
 
